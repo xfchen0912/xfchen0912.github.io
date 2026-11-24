@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xufeng Chen | Interpretable AI for Cells in Context</title>
+  <meta name="description" content="Xufeng Chen develops interpretable machine-learning methods for single-cell and spatial multi-omics.">
+  <meta name="theme-color" content="#ed7841">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Xufeng Chen | Computational Biology">
+  <meta property="og:description" content="Interpretable AI for cells in context.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">Xufeng Chen</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span><b class="sr-only">Open navigation</b>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#research">Research</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <p class="hero-kicker">Computational biology · Single-cell &amp; spatial multi-omics</p>
+        <h1>Interpretable AI for<br><em>cells in context.</em></h1>
+        <p class="hero-intro">I develop machine-learning methods to understand how gene regulation and tissue environments shape cell states in development and disease.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="assets/Xufeng_Chen_CV.pdf">Download CV</a>
+          <a class="button" href="https://github.com/xfchen0912">GitHub</a>
+          <a class="button" href="https://orcid.org/0009-0008-6122-2164">ORCID</a>
+          <a class="button" href="https://x.com/xfchen0912">X</a>
+          <a class="button" href="https://bsky.app/profile/xfchen0912.bsky.social">Bluesky</a>
+          <a class="button" href="mailto:chenxufeng2022@sinh.ac.cn">Email</a>
+        </div>
+        <p class="hero-status">PhD Candidate · Chinese Academy of Sciences · Expected 2027</p>
+      </div>
+      <div class="hero-explore" data-explore>
+        <figure class="hero-art">
+          <div class="hero-artwork">
+            <img src="assets/hero-multiscale-zoom-corrected.png" width="1672" height="941"
+              alt="Pixel illustration zooming from a patient's liver into a tissue sample, an individual liver cell, and the chromatin inside its nucleus.">
+            <svg class="zoom-highlight" viewBox="0 0 1672 941" aria-hidden="true">
+              <g data-region="nucleus"><path d="M569 710 747 750 M585 825 747 779"/><rect x="747" y="750" width="45" height="29"/></g>
+              <g data-region="cell"><path d="M895 711 1030 735 M895 837 1030 770"/><rect x="1030" y="735" width="52" height="35"/></g>
+              <g data-region="liver"><path d="M1317 652 1435 707 M1317 863 1435 738"/><rect x="1435" y="707" width="51" height="31"/></g>
+            </svg>
+            <button hidden class="zoom-point" type="button" data-region="nucleus" data-note="Chromatin sits inside the nucleus of a liver cell." aria-label="Zoom into the nucleus" aria-pressed="false" aria-controls="zoom-note"></button>
+            <button hidden class="zoom-point" type="button" data-region="cell" data-note="An individual liver cell sits among other cells in the tissue." aria-label="Zoom into a liver cell" aria-pressed="false" aria-controls="zoom-note"></button>
+            <button hidden class="zoom-point" type="button" data-region="liver" data-note="A closer look at the liver reveals its tissue microenvironment." aria-label="Zoom into liver tissue" aria-pressed="false" aria-controls="zoom-note"></button>
+          </div>
+        </figure>
+        <p class="explore-note" id="zoom-note" data-explore-note aria-live="polite" hidden>Explore the highlighted regions.</p>
+      </div>
+      <a class="scroll-cue" href="#research">Explore the research</a>
+    </section>
+
+    <section class="research section" id="research" aria-labelledby="research-title">
+      <div class="section-shell">
+        <div class="vision-intro reveal">
+          <p class="eyebrow">Research vision</p>
+          <h2 id="research-title">How do cells change state in diseased tissues?</h2>
+          <p>I study how gene regulation and signals from neighbouring cells shape cellular plasticity. My goal is to identify which programs sustain disease-associated states, and which changes in regulation or tissue context might shift those states.</p>
+        </div>
+        <div class="vision-directions reveal">
+          <h3>Research directions</h3>
+          <dl>
+            <div>
+              <dt>Regulatory programs in transition</dt>
+              <dd>I use single-cell gene expression and chromatin accessibility to ask which transcription factors act together as cells change state, and how their influence varies over a transition. <a class="research-project-link" href="#project-scmagnify">Explore scMagnify</a></dd>
+            </div>
+            <div>
+              <dt>Cells in their spatial niches</dt>
+              <dd>I build models of spatial transcriptomics to ask why cells of the same type behave differently across a tissue, and which differences are associated with their local neighbours or the broader tissue condition. <a class="research-project-link" href="#project-kaleido">Explore KALEIDO</a></dd>
+            </div>
+            <div>
+              <dt>Predicting responses to perturbation</dt>
+              <dd>I aim to predict how a cell would respond to a change in condition or neighbourhood, and to identify which predictions carry across tissue contexts. Liver disease provides a setting to study these questions alongside hepatocyte plasticity and tissue remodelling. <a class="research-project-link" href="#project-kaleido">See KALEIDO’s perturbation approach</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Selected work</p><h2 id="projects-title">Research projects</h2></div>
+        </div>
+        <article class="project project-featured reveal" id="project-scmagnify" tabindex="-1" aria-labelledby="scmagnify-title">
+          <div class="project-visual project-art magnify-scene">
+            <img class="magnify-icon" src="assets/research-regulation.png" width="1448" height="1086" alt="" loading="lazy" decoding="async">
+            <div class="magnify-preview" aria-hidden="true">
+              <div class="magnify-workflow">
+                <img src="assets/scmagnify-pixel-workflow-grn-regfactors.png" width="2170" height="725" alt="" loading="lazy" decoding="async">
+                <div class="magnify-workflow-labels">
+                  <span>Gene expression + chromatin accessibility</span>
+                  <span>Time-lagged network inference</span>
+                  <span>Regulatory networks + RegFactors</span>
+                </div>
+              </div>
+            </div>
+            <a class="model-trigger" id="scmagnify-model-trigger" href="assets/scmagnify-model-overview.png">View model
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Method development · Nature Communications</p>
+            <h3 id="scmagnify-title">scMagnify</h3>
+            <h4>Interpretable deep learning for dynamic gene regulation</h4>
+            <p>scMagnify integrates single-cell gene expression and chromatin accessibility to infer time-lagged gene-regulatory networks. It decomposes these networks into groups of transcription factors whose activity can be tracked along a cell-state transition.</p>
+            <p>This helps identify candidate regulators of cell-state changes and trace how signals from neighbouring cells may connect to transcriptional responses inside a cell.</p>
+            <div class="text-links">
+              <a href="https://doi.org/10.1038/s41467-026-78441-9">Article</a>
+              <a href="https://github.com/LiHongCSBLab/scMagnify">Code</a>
+              <a href="https://scmagnify.readthedocs.io/">Documentation</a>
+            </div>
+          </div>
+        </article>
+        <div class="project-pair">
+          <article class="project project-small reveal" id="project-kaleido" tabindex="-1" aria-labelledby="kaleido-title" data-explore>
+            <div class="project-art project-art-spatial">
+              <div class="cube-explore">
+                <img src="assets/research-context.png" width="1402" height="1122" alt="" loading="lazy" decoding="async">
+                <button hidden type="button" class="cube-face" data-region="condition" data-note="Tissue condition: the broader biological setting, such as disease stage or treatment." aria-label="Tissue condition" aria-pressed="false" aria-controls="kaleido-note"></button>
+                <button hidden type="button" class="cube-face" data-region="niche" data-note="Local niche: the neighbouring cells and spatial environment surrounding a cell." aria-label="Local niche" aria-pressed="false" aria-controls="kaleido-note"></button>
+                <button hidden type="button" class="cube-face" data-region="state" data-note="Cell-intrinsic state: the characteristics of the focal cell that the model represents separately from its surroundings." aria-label="Cell-intrinsic state" aria-pressed="false" aria-controls="kaleido-note"></button>
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">Spatial generative modelling</p>
+              <h3 id="kaleido-title">KALEIDO</h3>
+              <p class="explore-note" id="kaleido-note" data-explore-note aria-live="polite" hidden>Select a face of the cube to explore the model.</p>
+              <p>KALEIDO uses a graph-based generative model to represent cell-intrinsic state, tissue condition and local niche separately in spatial transcriptomics.</p>
+              <p>The model is designed to ask how the same cell state might respond differently across niches, or how a change in tissue condition could alter expression directly or through the local microenvironment.</p>
+            </div>
+          </article>
+          <article class="project project-small reveal">
+            <div class="project-art project-art-liver">
+              <figure class="liver-stages">
+                <img src="assets/liver-disease-four-stages.png" width="2172" height="724" alt="Four schematic liver illustrations, from left to right." loading="lazy" decoding="async">
+                <figcaption>
+                  <span>Healthy</span>
+                  <span>MASLD</span>
+                  <span>MASH</span>
+                  <span>HCC</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">Single-cell and spatial multi-omics</p>
+              <h3>Liver disease progression</h3>
+              <p>I use transcriptomic, chromatin accessibility and spatial profiles to study how hepatocyte states and their tissue niches change across metabolic liver disease, fibrosis and liver cancer.</p>
+              <p>I ask which regulatory changes accompany hepatocyte plasticity, and how fibroblast and immune-cell remodelling may help sustain disease-associated states.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="publications section" id="publications" aria-labelledby="publications-title">
+      <div class="section-shell">
+        <div class="section-heading publications-heading">
+          <h2 id="publications-title">Publications</h2>
+          <div class="publication-profiles" role="group" aria-label="Academic profiles and publications">
+            <a href="https://scholar.google.com/scholar?q=author%3A%22Xufeng+Chen%22+scMagnify">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 8l11 6 8-4.4V16h2V8L12 2zm-6 11v4c0 2.3 2.7 4 6 4s6-1.7 6-4v-4l-6 3.2L6 13z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://orcid.org/0009-0008-6122-2164">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="11" fill="#A6CE39"/>
+                <path d="M8 10v7m4-7v7h2a3.5 3.5 0 0 0 0-7z" fill="none" stroke="#17223b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="8" cy="7" r="1" fill="#17223b"/>
+              </svg>
+              ORCID
+            </a>
+          </div>
+        </div>
+        <details class="publication-year" open>
+          <summary>2026 <span>4 publications</span></summary>
+          <ul class="publication-list">
+            <li class="publication-featured"><div class="pub-meta"><strong>Nature Communications</strong></div><div><h3><span class="publication-star" aria-label="Featured paper" role="img">★</span> <a href="https://doi.org/10.1038/s41467-026-78441-9">Decomposing multi-scale dynamic regulation from single-cell multiomics with scMagnify</a></h3><p><strong>Chen X</strong>, Yan X, Shen B, Wang H, Tang Z, Zang Y, Lin P, Zhang H, Li Y, Li H.</p></div></li>
+            <li><div class="pub-meta"><strong>Cell Reports Medicine</strong></div><div><h3><a href="https://doi.org/10.1016/j.xcrm.2026.102751">Pan-cancer analysis of spatial transcriptomics reveals heterogeneous tumor spatial microenvironment</a></h3><p>Li J, Lin P, Wang H, Tang Z, Yan X, <strong>Chen X</strong>, et al.</p></div></li>
+            <li>
+              <div class="pub-meta"><strong>Advanced Science</strong></div>
+              <div>
+                <h3><a href="https://doi.org/10.1002/advs.202523964">Hepatoma-Derived Growth Factor Coordinates STAT3 Pathway and Exosome-Mediated Intrahepatic Crosstalk to Control Hepatic Steatosis and MASLD</a></h3>
+                <p>Wen J, Ding D, Zheng Z, <strong>Chen X</strong>, et al.</p>
+              </div>
+            </li>
+            <li>
+              <div class="pub-meta"><strong>Journal of Clinical Investigation</strong></div>
+              <div>
+                <h3><a href="https://doi.org/10.1172/JCI207089">Palmitic acid coordinates impaired visceral adipose ICOS<sup>hi</sup> Treg-mediated immunosuppression and systemic metabolic disturbance during obesity</a></h3>
+                <p>Su W, Liu Y, Yan X, Huang M, Xu L, Lin J, <strong>Chen X</strong>, et al.</p>
+              </div>
+            </li>
+          </ul>
+        </details>
+        <details class="publication-year">
+          <summary>2024 <span>1 publication</span></summary>
+          <ul class="publication-list">
+            <li><div class="pub-meta"><strong>Genome Medicine</strong></div><div><h3><a href="https://doi.org/10.1186/s13073-024-01367-8">Spatial multiomics reveals a subpopulation of fibroblasts associated with cancer stemness in human hepatocellular carcinoma</a></h3><p>Jing S, Liu D, Feng N, Dong H, Wang H, Yan X, <strong>Chen X</strong>, et al.</p></div></li>
+          </ul>
+        </details>
+        <a class="publications-cv" href="assets/Xufeng_Chen_CV.pdf">Download CV</a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-shell about-grid">
+        <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Computational biology across scales.</h2><p>I am a PhD candidate at the Shanghai Institute of Nutrition and Health, Chinese Academy of Sciences. My work sits at the intersection of machine learning, gene regulation and spatial tissue biology.</p><a class="button button-dark" href="assets/Xufeng_Chen_CV.pdf">Read the full CV</a></div>
+        <div class="timeline reveal"><article><time>2022–present</time><h3>PhD Candidate in Computational Biology</h3><p>Shanghai Institute of Nutrition and Health, CAS · University of Chinese Academy of Sciences</p><small>Supervisors: Prof. Hong Li and Prof. Yu Li · Expected 2027</small></article><article><time>2018–2022</time><h3>BSc in Biotechnology</h3><p>Huazhong Agricultural University</p></article><article><time>Selected recognition</time><h3>National Scholarship · Best Poster · Best Oral Presentation</h3><p>Graduate research awards, 2026</p></article></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-pixels" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="section-shell contact-inner reveal"><p class="eyebrow">Get in touch</p><h2>Let’s talk about cells,<br>models and context.</h2><p>I welcome conversations about computational biology, single-cell and spatial multi-omics, open-source methods and interdisciplinary collaboration.</p><div class="contact-links"><a href="mailto:xfchen0912@gmail.com">xfchen0912@gmail.com</a><a href="https://github.com/xfchen0912">GitHub</a><a href="https://orcid.org/0009-0008-6122-2164">ORCID</a></div></div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="current-year">2026</span> Xufeng Chen</span><span>Computational biology · Shanghai, China</span></footer>
+  <dialog class="model-dialog" id="scmagnify-model" aria-labelledby="scmagnify-model-title">
+    <header class="model-dialog-header">
+      <h2 id="scmagnify-model-title">scMagnify model overview</h2>
+      <form method="dialog"><button type="submit" autofocus>Close</button></form>
+    </header>
+    <figure>
+      <a href="assets/scmagnify-model-overview.png" target="_blank" rel="noopener">
+        <img src="assets/scmagnify-model-overview.png" width="2159" height="1989" loading="lazy" decoding="async"
+          alt="scMagnify workflow from single-cell multi-omics inputs to dynamic gene-regulatory networks and downstream analyses.">
+      </a>
+      <figcaption>scMagnify combines gene expression and chromatin accessibility to infer time-lagged gene regulatory networks. RegFactor decomposition identifies groups of transcription factors and their shared target genes. Select the image to open the original Figure 1 at full resolution.</figcaption>
+    </figure>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
